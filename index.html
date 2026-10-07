@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="es-MX" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <script>
+        /* Marca JS activo y bloquea el scroll durante el preloader.
+           Si app.js no llega a cargar, se libera la página a los 8 s para no dejarla en blanco. */
+        document.documentElement.className = 'js js-on is-loading';
+        setTimeout(function () {
+            if (!window.__tse) {
+                document.documentElement.classList.remove('js-on', 'is-loading');
+                var l = document.getElementById('loader'); if (l) l.remove();
+            }
+        }, 8000);
+    </script>
+
+    <!-- ═══════════════ SEO ═══════════════ -->
+    <title>Transportes Silva Express | Transporte de carga pesada nacional</title>
+    <meta name="description" content="Transporte terrestre de carga pesada, nacional y local, desde Querétaro. Más de 50 años de experiencia, cajas de 53 y 48 pies y thermo. Cotiza por WhatsApp.">
+    <meta name="keywords" content="transporte de carga pesada, transporte de carga Querétaro, fletes nacionales, caja de 53 pies, caja de 48 pies, thermo, carga refrigerada, Torton, transportes Silva Express">
+    <meta name="author" content="Transportes Silva Express">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#F4F8F3">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Open Graph / Twitter.
+         TODO producción: al publicar, agrega <link rel="canonical">, og:url y usa URL absoluta
+         en og:image (por ejemplo https://tudominio.com/img/og-image.jpg). -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Transportes Silva Express">
+    <meta property="og:title" content="Transportes Silva Express | Tu carga llega en tiempo y forma">
+    <meta property="og:description" content="Carga pesada por todo México con unidades propias, cajas de 53 y 48 pies, thermo y más de 50 años de experiencia.">
+    <meta property="og:image" content="img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" sizes="64x64" href="img/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Tipografía: Geist (títulos y texto) + Geist Mono (datos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Iconos: Phosphor Icons (bold + fill) -->
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+
+    <link rel="preload" as="image" href="img/flota-noche-600.jpg" fetchpriority="high">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ═══════════════ DATOS ESTRUCTURADOS ═══════════════ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": ["LocalBusiness", "Organization"],
+                "@id": "#empresa",
+                "name": "Transportes Silva Express",
+                "alternateName": "TSE",
+                "description": "Línea de transporte terrestre de carga pesada, nacional y local, con más de 50 años de experiencia. Unidades propias con cajas de 53 y 48 pies, thermo, Torton y camionetas cerradas y abiertas.",
+                "logo": "img/logo.png",
+                "image": "img/flota-noche.jpg",
+                "telephone": "+52 442 363 3383",
+                "email": "silvaexpress369@gmail.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Carretera Querétaro-Celaya, Santa María Magdalena",
+                    "addressLocality": "Querétaro",
+                    "addressRegion": "Querétaro",
+                    "postalCode": "76930",
+                    "addressCountry": "MX"
+                },
+                "areaServed": { "@type": "Country", "name": "México" },
+                "contactPoint": [
+                    { "@type": "ContactPoint", "telephone": "+52 566 433 0983", "contactType": "ventas", "availableLanguage": "es" },
+                    { "@type": "ContactPoint", "telephone": "+52 322 236 3474", "contactType": "ventas", "availableLanguage": "es" },
+                    { "@type": "ContactPoint", "telephone": "+52 442 363 3383", "contactType": "ventas", "availableLanguage": "es" }
+                ],
+                "makesOffer": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transporte de carga seca en caja de 53 y 48 pies" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transporte de carga refrigerada con thermo" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transporte en Torton y camionetas cerradas o abiertas" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transporte terrestre nacional y local" } }
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "name": "Transportes Silva Express",
+                "inLanguage": "es-MX",
+                "publisher": { "@id": "#empresa" }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué tipos de unidades tienen disponibles?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Trabajamos con unidades propias con cajas de 53 y 48 pies y con thermo. Además contamos con unidades de familia directa, Torton y camionetas cerradas y abiertas, y colaboramos con TQL y Transportes Olmos." }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Cubren todo México?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Ofrecemos servicio de transporte terrestre nacional y local, con base en Querétaro. Dinos tu origen y destino y armamos la ruta." }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Manejan carga refrigerada?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Sí, contamos con unidades con thermo para mercancía que necesita viajar protegida de origen a destino." }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué necesito para solicitar una cotización?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Solo necesitamos el origen y destino, el tipo de mercancía, el peso o volumen aproximado y la fecha en que requieres el servicio. Puedes enviarlo por WhatsApp, por correo o con el formulario de esta página." }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Con qué empresas han trabajado?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Hemos prestado servicio a empresas como Bio Pappel, ALI (Acción Logística Integral), Sabritas y Galletas Dondé, entre otras." }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Cuánta experiencia tiene Transportes Silva Express?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Somos una línea de transportes de carga pesada con más de 50 años de experiencia en el área." }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Dónde se encuentra su patio de operaciones?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Nuestro patio está sobre la carretera Querétaro-Celaya, en Santa María Magdalena, C.P. 76930, Querétaro." }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- ═══════════════ SPRITE DEL LOGO (trébol TSE, vectorizado) ═══════════════ -->
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+        <path id="tse-petal" pathLength="100" d="M43 0L-100.1 -143A70.6 70.6 0 1 1 0 -242.7A70.6 70.6 0 1 1 100.1 -143L-43 0"/>
+        <g id="tse-clover">
+            <use href="#tse-petal"/>
+            <use href="#tse-petal" transform="rotate(90)"/>
+            <use href="#tse-petal" transform="rotate(180)"/>
+            <use href="#tse-petal" transform="rotate(270)"/>
+        </g>
+    </defs>
+</svg>
+
+<!-- ═══════════════ PRELOADER ═══════════════ -->
+<div id="loader" class="loader" role="status" aria-live="polite">
+    <span class="sr-only">Cargando Transportes Silva Express</span>
+    <div class="loader__panel loader__panel--top" aria-hidden="true"></div>
+    <div class="loader__panel loader__panel--bottom" aria-hidden="true"></div>
+    <div class="loader__core" aria-hidden="true">
+        <div class="loader__ring">
+            <svg class="loader__orbit" viewBox="0 0 200 200">
+                <circle class="orbit__track" cx="100" cy="100" r="94"/>
+                <circle class="orbit__arc" cx="100" cy="100" r="94" pathLength="100"/>
+            </svg>
+            <svg class="loader__logo" viewBox="-292 -292 584 584">
+                <g class="loader__draw"><use href="#tse-clover"/></g>
+            </svg>
+        </div>
+        <p class="loader__brand">Transportes Silva Express</p>
+        <div class="loader__meter">
+            <span class="loader__bar"><i id="loader-bar"></i></span>
+            <span class="loader__num"><b id="loader-count">0</b>%</span>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<header class="site-header" id="inicio-nav">
+    <div class="nav">
+        <a class="brand" href="#inicio" aria-label="Transportes Silva Express, ir al inicio">
+            <svg class="brand__mark" viewBox="-292 -292 584 584" aria-hidden="true"><use href="#tse-clover"/></svg>
+            <span class="brand__name"><small>Transportes</small>Silva Express</span>
+        </a>
+
+        <nav class="nav__links" aria-label="Principal">
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Unidades</a>
+            <a href="#cobertura">Cobertura</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#faq">Preguntas</a>
+        </nav>
+
+        <a class="btn btn--primary btn--sm nav__cta" href="https://wa.me/524423633383" data-wa="Hola, quiero cotizar el traslado de mi carga con Transportes Silva Express." target="_blank" rel="noopener" data-magnetic>
+            <span class="btn__label">Cotizar mi carga</span>
+        </a>
+
+        <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+            <span></span><span></span>
+        </button>
+    </div>
+    <div class="progress" aria-hidden="true"><i id="progress"></i></div>
+</header>
+
+<!-- MENÚ MÓVIL -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menú de navegación" aria-hidden="true">
+    <nav class="menu__nav" aria-label="Menú móvil">
+        <a href="#nosotros" style="--i:0">Nosotros</a>
+        <a href="#servicios" style="--i:1">Unidades</a>
+        <a href="#cobertura" style="--i:2">Cobertura</a>
+        <a href="#proceso" style="--i:3">Proceso</a>
+        <a href="#faq" style="--i:4">Preguntas</a>
+        <a href="#contacto" style="--i:5">Contacto</a>
+    </nav>
+    <div class="menu__foot">
+        <a class="btn btn--primary btn--block" href="https://wa.me/524423633383" data-wa="Hola, quiero cotizar el traslado de mi carga con Transportes Silva Express." target="_blank" rel="noopener">
+            <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+            <span class="btn__label">Quiero mi cotización</span>
+        </a>
+        <p>Querétaro, México. Servicio nacional y local.</p>
+    </div>
+</div>
+
+<main id="contenido">
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+    <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--a"></span>
+        <span class="blob blob--b"></span>
+        <span class="blob blob--c"></span>
+        <canvas id="hero-canvas"></canvas>
+        <span class="hero__fade"></span>
+    </div>
+
+    <div class="wrap hero__grid">
+        <div class="hero__copy">
+            <h1 class="hero__title" id="hero-title" data-split>Tu carga llega en <em>tiempo y forma.</em></h1>
+            <p class="hero__lead" data-reveal style="--d:.55s">Transporte terrestre de carga pesada por todo México, con unidades propias y más de 50 años de experiencia.</p>
+            <div class="hero__cta" data-reveal style="--d:.7s">
+                <a class="btn btn--primary btn--lg" href="https://wa.me/524423633383" data-wa="Hola, estoy listo para cotizar el traslado de mi carga con Transportes Silva Express." target="_blank" rel="noopener" data-magnetic>
+                    <span class="btn__label">Estoy listo para cotizar</span>
+                    <span class="btn__arrow" aria-hidden="true"><i class="ph-bold ph-arrow-up-right"></i></span>
+                </a>
+                <a class="btn btn--ghost btn--lg" href="#servicios">
+                    <span class="btn__label">Conoce nuestras unidades</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero__stage" data-stage data-reveal="scale" style="--d:.35s">
+            <div class="stage__ring" aria-hidden="true" data-depth="-6">
+                <svg viewBox="0 0 600 600">
+                    <defs><path id="ring-path" d="M300,300 m-262,0 a262,262 0 1,1 524,0 a262,262 0 1,1 -524,0"/></defs>
+                    <text><textPath href="#ring-path">TRANSPORTES SILVA EXPRESS / CARGA PESADA / NACIONAL Y LOCAL / THERMO / CAJAS DE 53 Y 48 PIES /</textPath></text>
+                </svg>
+            </div>
+            <span class="stage__halo" aria-hidden="true"></span>
+
+            <figure class="stage__main" data-depth="9">
+                <div class="stage__frame">
+                    <img src="img/flota-noche-600.jpg"
+                         srcset="img/flota-noche-600.jpg 600w, img/flota-noche.jpg 900w"
+                         sizes="(min-width: 1024px) 320px, 62vw"
+                         width="900" height="1600"
+                         alt="Dos tractocamiones de Transportes Silva Express estacionados de noche con las luces ámbar encendidas"
+                         fetchpriority="high" decoding="async">
+                    <span class="stage__beam" aria-hidden="true"></span>
+                </div>
+            </figure>
+
+            <figure class="stage__second" data-depth="20">
+                <div class="stage__frame">
+                    <img src="img/unidad-tracto.jpg" width="450" height="800" loading="eager" decoding="async"
+                         alt="Frente de un tractocamión de carga pesada de la flota de Transportes Silva Express">
+                </div>
+            </figure>
+
+            <div class="stage__badge" data-depth="28" aria-hidden="true">
+                <svg viewBox="-292 -292 584 584"><use href="#tse-clover"/></svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ CLIENTES (única marquesina de la página) ═══════════════ -->
+<section class="clients" aria-labelledby="clients-title">
+    <div class="wrap clients__head">
+        <h2 class="clients__title" id="clients-title">Hemos prestado servicio a empresas como</h2>
+    </div>
+    <div class="marquee" aria-label="Bio Pappel, ALI Acción Logística Integral, Sabritas, Galletas Dondé y más">
+        <div class="marquee__track">
+            <ul class="marquee__list">
+                <li>Bio Pappel</li>
+                <li class="sep" aria-hidden="true"><svg viewBox="-292 -292 584 584"><use href="#tse-clover"/></svg></li>
+                <li>ALI Acción Logística Integral</li>
+                <li class="sep" aria-hidden="true"><svg viewBox="-292 -292 584 584"><use href="#tse-clover"/></svg></li>
+                <li>Sabritas</li>
+                <li class="sep" aria-hidden="true"><svg viewBox="-292 -292 584 584"><use href="#tse-clover"/></svg></li>
+                <li>Galletas Dondé</li>
+                <li class="sep" aria-hidden="true"><svg viewBox="-292 -292 584 584"><use href="#tse-clover"/></svg></li>
+                <li>y muchas más</li>
+                <li class="sep" aria-hidden="true"><svg viewBox="-292 -292 584 584"><use href="#tse-clover"/></svg></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ NOSOTROS (manifiesto con scroll + cifras) ═══════════════ -->
+<section class="about" id="nosotros" aria-labelledby="about-title">
+    <div class="about__pin" id="manifesto">
+        <div class="about__sticky">
+            <div class="wrap">
+                <h2 class="sr-only" id="about-title">Quiénes somos</h2>
+                <p class="manifesto" id="manifesto-text" data-manifesto>Somos Transportes Silva Express. Llevamos <em>más de 50 años</em> cuidando cada carga, desde su origen hasta su destino, con unidades propias, atención personalizada y la seguridad de que tu mercancía llega <em>en tiempo y forma.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <dl class="stats">
+            <div class="stat" data-reveal>
+                <dt>años de experiencia en carretera</dt>
+                <dd><span class="stat__num"><b data-count="50">50</b>+</span></dd>
+            </div>
+            <div class="stat" data-reveal style="--d:.08s">
+                <dt>pies en cajas de unidades propias</dt>
+                <dd><span class="stat__num"><b data-count="53">53</b> y <b data-count="48">48</b></span></dd>
+            </div>
+            <div class="stat" data-reveal style="--d:.16s">
+                <dt>servicio terrestre en todo el país</dt>
+                <dd><span class="stat__num stat__num--text">Nacional <small>y local</small></span></dd>
+            </div>
+            <div class="stat" data-reveal style="--d:.24s">
+                <dt>líneas directas de atención</dt>
+                <dd><span class="stat__num"><b data-count="3">3</b></span></dd>
+            </div>
+        </dl>
+    </div>
+</section>
+
+<!-- ═══════════════ UNIDADES / SERVICIOS (cartas apiladas con scroll) ═══════════════ -->
+<section class="services" id="servicios" aria-labelledby="services-title">
+    <div class="wrap">
+        <div class="section-head" data-reveal>
+            <p class="eyebrow">Unidades y servicios</p>
+            <h2 class="h2" id="services-title">La unidad correcta para cada tipo de carga</h2>
+            <p class="lead">Unidades propias y aliados de confianza para cubrir la operación que necesites, en ruta nacional o local.</p>
+        </div>
+
+        <div class="stack" id="stack">
+            <!-- 1 · Cajas secas -->
+            <article class="svc svc--light" data-svc style="--i:0">
+                <div class="svc__body">
+                    <span class="svc__icon"><i class="ph-bold ph-truck" aria-hidden="true"></i></span>
+                    <h3 class="svc__title">Cajas secas de 53 y 48 pies</h3>
+                    <p class="svc__text">Tractocamiones propios con caja de 53 y 48 pies para mover grandes volúmenes de mercancía con la seguridad de una operación que conocemos de principio a fin.</p>
+                    <ul class="svc__list">
+                        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Unidades propias</li>
+                        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Caja de 53 pies</li>
+                        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Caja de 48 pies</li>
+                    </ul>
+                    <a class="link-arrow" href="https://wa.me/524423633383" data-wa="Hola, quiero cotizar una caja seca de 53 o 48 pies con Transportes Silva Express." target="_blank" rel="noopener">
+                        Quiero cotizar mi caja <i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="svc__visual">
+                    <img src="img/unidad-512.jpg" width="470" height="880" loading="lazy" decoding="async" data-parallax="0.05"
+                         alt="Tractocamión Freightliner blanco de la flota propia de Transportes Silva Express con luces ámbar de noche">
+                </div>
+            </article>
+
+            <!-- 2 · Thermo -->
+            <article class="svc svc--dark" data-svc style="--i:1">
+                <div class="svc__body">
+                    <span class="svc__icon"><i class="ph-bold ph-snowflake" aria-hidden="true"></i></span>
+                    <h3 class="svc__title">Thermo para carga refrigerada</h3>
+                    <p class="svc__text">Unidades con thermo para mercancía que necesita viajar protegida. Cuidamos tu carga desde el origen hasta el destino, con comunicación clara en el camino.</p>
+                    <ul class="svc__list">
+                        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Unidades con thermo</li>
+                        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Cuidado de la mercancía de punta a punta</li>
+                        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Atención personalizada</li>
+                    </ul>
+                    <a class="link-arrow" href="https://wa.me/524423633383" data-wa="Hola, necesito cotizar transporte con thermo para mi carga con Transportes Silva Express." target="_blank" rel="noopener">
+                        Necesito carga refrigerada <i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="svc__visual svc__visual--frost" aria-hidden="true">
+                    <i class="ph-bold ph-snowflake frost__big"></i>
+                    <i class="ph-bold ph-snowflake frost__f" style="--x:12%;--s:1.2rem;--t:9s;--dl:-1s"></i>
+                    <i class="ph-bold ph-snowflake frost__f" style="--x:28%;--s:.9rem;--t:12s;--dl:-6s"></i>
+                    <i class="ph-bold ph-snowflake frost__f" style="--x:44%;--s:1.6rem;--t:10s;--dl:-3s"></i>
+                    <i class="ph-bold ph-snowflake frost__f" style="--x:61%;--s:1rem;--t:13s;--dl:-8s"></i>
+                    <i class="ph-bold ph-snowflake frost__f" style="--x:76%;--s:1.4rem;--t:11s;--dl:-2s"></i>
+                    <i class="ph-bold ph-snowflake frost__f" style="--x:90%;--s:.8rem;--t:14s;--dl:-9s"></i>
+                </div>
+            </article>
+
+            <!-- 3 · Torton y camionetas -->
+            <article class="svc svc--mint" data-svc style="--i:2">
+                <div class="svc__body">
+                    <span class="svc__icon"><i class="ph-bold ph-van" aria-hidden="true"></i></span>
+                    <h3 class="svc__title">Torton y camionetas para cada entrega</h3>
+                    <p class="svc__text">Para cargas medianas y entregas más ágiles contamos con Torton y camionetas cerradas o abiertas, en servicio local y nacional.</p>
+                    <ul class="svc__list">
+                        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Torton</li>
+                        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Camionetas cerradas</li>
+                        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Camionetas abiertas</li>
+                    </ul>
+                    <a class="link-arrow" href="https://wa.me/524423633383" data-wa="Hola, quiero cotizar un Torton o una camioneta con Transportes Silva Express." target="_blank" rel="noopener">
+                        Clic aquí y cuéntanos tu entrega <i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="svc__visual">
+                    <!-- Foto de stock (Unsplash, licencia libre). Sustituir por foto real de Torton/camionetas cuando la tengan. -->
+                    <img src="img/almacen.jpg" width="1400" height="933" loading="lazy" decoding="async" data-parallax="0.05"
+                         alt="Almacén de distribución con estantería y mercancía lista para entrega local">
+                </div>
+            </article>
+
+            <!-- 4 · Aliados -->
+            <article class="svc svc--brand" data-svc style="--i:3">
+                <div class="svc__body">
+                    <span class="svc__icon"><i class="ph-bold ph-handshake" aria-hidden="true"></i></span>
+                    <h3 class="svc__title">Aliados que amplían tu capacidad</h3>
+                    <p class="svc__text">Colaboramos con TQL y Transportes Olmos, además de unidades de familia directa, para responder cuando tu operación crece.</p>
+                    <ul class="svc__list">
+                        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Colaboración con TQL</li>
+                        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Colaboración con Transportes Olmos</li>
+                        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Unidades de familia directa</li>
+                    </ul>
+                    <a class="link-arrow" href="https://wa.me/524423633383" data-wa="Hola, quiero hablar con Transportes Silva Express sobre capacidad de transporte para mi operación." target="_blank" rel="noopener">
+                        Quiero hablar de mi operación <i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="svc__visual">
+                    <!-- Foto de stock (Unsplash). -->
+                    <img src="img/ruta-montana.jpg" width="1400" height="933" loading="lazy" decoding="async" data-parallax="0.05"
+                         alt="Camión de carga circulando por una carretera de montaña en ruta nacional">
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ COMPROMISOS (bento) ═══════════════ -->
+<section class="values" id="compromisos" aria-labelledby="values-title">
+    <div class="wrap">
+        <div class="section-head" data-reveal>
+            <h2 class="h2" id="values-title">Lo que cuidamos en cada viaje</h2>
+            <p class="lead">Siete valores que guían cada servicio, desde que cargas hasta que entregas.</p>
+        </div>
+
+        <div class="bento">
+            <article class="cell cell--photo cell--seg" data-reveal data-spot>
+                <img src="img/flota-noche-600.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="">
+                <div class="cell__in">
+                    <span class="cell__icon"><i class="ph-bold ph-shield-check" aria-hidden="true"></i></span>
+                    <h3>Seguridad</h3>
+                    <p>Priorizamos la protección de la mercancía durante todo el traslado.</p>
+                </div>
+            </article>
+
+            <article class="cell cell--clock cell--pun" data-reveal data-spot style="--d:.08s">
+                <svg class="clock" viewBox="0 0 100 100" aria-hidden="true">
+                    <circle class="clock__face" cx="50" cy="50" r="44"/>
+                    <circle class="clock__tick" cx="50" cy="50" r="44" pathLength="60"/>
+                    <line class="clock__h" x1="50" y1="50" x2="50" y2="26"/>
+                    <line class="clock__m" x1="50" y1="50" x2="50" y2="14"/>
+                </svg>
+                <div class="cell__in">
+                    <h3>Puntualidad</h3>
+                    <p>Respetamos los tiempos acordados de carga y entrega.</p>
+                </div>
+            </article>
+
+            <article class="cell cell--plain cell--res" data-reveal data-spot style="--d:.16s">
+                <div class="cell__in">
+                    <span class="cell__icon"><i class="ph-bold ph-seal-check" aria-hidden="true"></i></span>
+                    <h3>Responsabilidad</h3>
+                    <p>Cumplimos cada servicio y asumimos el compromiso de cuidar tu mercancía.</p>
+                </div>
+            </article>
+
+            <article class="cell cell--mint cell--hon" data-reveal data-spot>
+                <div class="cell__in">
+                    <span class="cell__icon"><i class="ph-bold ph-chats-circle" aria-hidden="true"></i></span>
+                    <h3>Honestidad</h3>
+                    <p>Transparencia y comunicación clara con nuestros clientes.</p>
+                </div>
+            </article>
+
+            <article class="cell cell--plain cell--com" data-reveal data-spot style="--d:.08s">
+                <div class="cell__in">
+                    <span class="cell__icon"><i class="ph-bold ph-handshake" aria-hidden="true"></i></span>
+                    <h3>Compromiso</h3>
+                    <p>Nos involucramos en cada servicio para dar una atención responsable y eficiente.</p>
+                </div>
+            </article>
+
+            <article class="cell cell--forest cell--cal" data-reveal data-spot style="--d:.16s">
+                <div class="cell__grid" aria-hidden="true"></div>
+                <div class="cell__in">
+                    <span class="cell__icon"><i class="ph-bold ph-certificate" aria-hidden="true"></i></span>
+                    <h3>Calidad</h3>
+                    <p>Mejoramos continuamente nuestros procesos para ofrecerte un servicio confiable, viaje tras viaje.</p>
+                </div>
+            </article>
+
+            <article class="cell cell--cta cell--ser" data-reveal data-spot>
+                <div class="cell__in cell__in--row">
+                    <div>
+                        <span class="cell__icon"><i class="ph-bold ph-headset" aria-hidden="true"></i></span>
+                        <h3>Servicio al cliente</h3>
+                        <p>Escuchamos las necesidades de cada cliente y buscamos soluciones adecuadas para su operación.</p>
+                    </div>
+                    <a class="btn btn--light btn--lg" href="https://wa.me/524423633383" data-wa="Hola, quiero que me ayuden a encontrar la mejor solución de transporte para mi operación." target="_blank" rel="noopener" data-magnetic>
+                        <span class="btn__label">Cuéntanos tu operación</span>
+                        <span class="btn__arrow" aria-hidden="true"><i class="ph-bold ph-arrow-up-right"></i></span>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ COBERTURA (mapa animado, sección oscura) ═══════════════ -->
+<section class="coverage" id="cobertura" aria-labelledby="coverage-title">
+    <div class="coverage__bg" aria-hidden="true"></div>
+    <div class="wrap coverage__grid">
+        <div class="coverage__copy">
+            <p class="eyebrow eyebrow--dark" data-reveal>Cobertura nacional</p>
+            <h2 class="h2 h2--dark" id="coverage-title" data-split>Desde Querétaro hasta cualquier punto de México</h2>
+            <p class="lead lead--dark" data-reveal style="--d:.2s">Servicio terrestre nacional y local con unidades propias y aliados. Dinos tu origen y tu destino y armamos la ruta.</p>
+            <ul class="checks" data-reveal style="--d:.3s">
+                <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>Rutas nacionales y servicio local</li>
+                <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>Unidades propias, de familia directa y en colaboración</li>
+                <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>Patio sobre la carretera Querétaro-Celaya</li>
+            </ul>
+            <a class="btn btn--glow btn--lg" href="https://wa.me/524423633383" data-wa="Hola, quiero consultar si tienen cobertura en mi ruta con Transportes Silva Express." target="_blank" rel="noopener" data-reveal style="--d:.4s" data-magnetic>
+                <span class="btn__label">Consulta tu ruta aquí</span>
+                <span class="btn__arrow" aria-hidden="true"><i class="ph-bold ph-arrow-up-right"></i></span>
+            </a>
+        </div>
+
+        <div class="map" id="map" data-reveal="scale" role="img" aria-label="Mapa de México con rutas de Transportes Silva Express saliendo desde Querétaro hacia las principales ciudades del país">
+            <canvas id="map-canvas"></canvas>
+            <div class="map__labels" id="map-labels" aria-hidden="true"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ PROCESO (recorrido horizontal con scroll) ═══════════════ -->
+<section class="process" id="proceso" aria-labelledby="process-title">
+    <div class="process__pin">
+        <div class="wrap process__head">
+            <h2 class="h2" id="process-title" data-reveal>Mover tu carga es así de simple</h2>
+        </div>
+
+        <div class="process__viewport">
+            <ol class="process__track" id="process-track">
+                <li class="step" data-reveal style="--d:0.00s">
+                    <span class="step__icon"><i class="ph-bold ph-chats-circle" aria-hidden="true"></i></span>
+                    <h3>Cuéntanos qué mueves</h3>
+                    <p>Compártenos origen, destino, tipo de mercancía, peso o volumen y la fecha en que la necesitas en camino.</p>
+                </li>
+                <li class="step" data-reveal style="--d:0.08s">
+                    <span class="step__icon"><i class="ph-bold ph-handshake" aria-hidden="true"></i></span>
+                    <h3>Te cotizamos con claridad</h3>
+                    <p>Te respondemos con una propuesta clara y la unidad adecuada: caja de 53 o 48 pies, thermo, Torton o camioneta.</p>
+                </li>
+                <li class="step" data-reveal style="--d:0.16s">
+                    <span class="step__icon"><i class="ph-bold ph-package" aria-hidden="true"></i></span>
+                    <h3>Cargamos a tiempo</h3>
+                    <p>Respetamos los horarios acordados de carga para que tu mercancía salga cuando debe salir.</p>
+                </li>
+                <li class="step" data-reveal style="--d:0.24s">
+                    <span class="step__icon"><i class="ph-bold ph-map-pin" aria-hidden="true"></i></span>
+                    <h3>Entregamos y confirmamos</h3>
+                    <p>Cuidamos la carga hasta su destino y te mantenemos informado con comunicación clara.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="wrap">
+            <div class="road" aria-hidden="true">
+                <div class="road__line"><i class="road__fill" id="road-fill"></i></div>
+                <div class="road__marker" id="road-marker"><svg viewBox="-292 -292 584 584"><use href="#tse-clover"/></svg></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ MISIÓN Y VISIÓN ═══════════════ -->
+<section class="mv" id="mision" aria-labelledby="mv-title">
+    <div class="wrap">
+        <div class="section-head" data-reveal>
+            <h2 class="h2" id="mv-title">Hacia dónde vamos</h2>
+        </div>
+
+        <div class="mv__panels" id="mv-panels">
+            <article class="mv__panel is-active" tabindex="0" data-reveal>
+                <!-- Foto de stock (Unsplash). -->
+                <img src="img/camion-ruta.jpg" width="1400" height="933" loading="lazy" decoding="async" alt="">
+                <div class="mv__in">
+                    <h3>Misión</h3>
+                    <p>Brindar servicios de transporte terrestre de carga de manera segura, eficiente y puntual, ofreciendo a nuestros clientes atención personalizada y soluciones confiables para el traslado de sus mercancías, trabajando con responsabilidad y compromiso, cuidando cada carga desde su origen hasta su destino.</p>
+                </div>
+            </article>
+            <article class="mv__panel" tabindex="0" data-reveal style="--d:.1s">
+                <!-- Foto de stock (Unsplash). -->
+                <img src="img/camion-atardecer.jpg" width="1400" height="933" loading="lazy" decoding="async" alt="">
+                <div class="mv__in">
+                    <h3>Visión</h3>
+                    <p>Ser una empresa de transporte terrestre reconocida por su confiabilidad, seguridad y calidad en el servicio, construyendo relaciones duraderas con nuestros clientes y consolidándonos como un aliado estratégico para sus necesidades de transporte y logística.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ CTA PRINCIPAL ═══════════════ -->
+<section class="cta" id="cotiza" aria-labelledby="cta-title">
+    <canvas class="cta__canvas" id="cta-canvas" aria-hidden="true"></canvas>
+    <svg class="cta__clover" viewBox="-292 -292 584 584" aria-hidden="true"><use href="#tse-clover"/></svg>
+    <div class="wrap cta__in">
+        <h2 class="h2 h2--dark cta__title" id="cta-title" data-split>¿Listo para mover tu carga?</h2>
+        <p class="lead lead--dark" data-reveal style="--d:.25s">Cuéntanos qué necesitas trasladar y te respondemos con una cotización clara y a tu medida.</p>
+        <div class="cta__actions" data-reveal style="--d:.4s">
+            <a class="btn btn--glow btn--xl" href="https://wa.me/524423633383" data-wa="Hola, quiero mi cotización hoy para mover mi carga con Transportes Silva Express." target="_blank" rel="noopener" data-magnetic>
+                <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+                <span class="btn__label">Quiero mi cotización hoy</span>
+            </a>
+            <a class="btn btn--outline-dark btn--xl" href="tel:+524423633383">
+                <i class="ph-bold ph-phone" aria-hidden="true"></i>
+                <span class="btn__label">Llamar al 442 363 3383</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ PREGUNTAS FRECUENTES ═══════════════ -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq__grid">
+        <div class="faq__intro" data-reveal>
+            <h2 class="h2" id="faq-title">Preguntas frecuentes</h2>
+            <p class="lead">Lo que más nos preguntan antes de mover su primera carga con nosotros.</p>
+            <a class="link-arrow" href="https://wa.me/524423633383" data-wa="Hola, tengo una pregunta sobre el servicio de Transportes Silva Express." target="_blank" rel="noopener">
+                ¿Otra duda? Escríbenos <i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div class="faq__list" id="faq-list">
+            <div class="faq__item" data-reveal>
+                <h3><button type="button" id="q1" aria-expanded="false" aria-controls="a1"><span>¿Qué tipos de unidades tienen disponibles?</span><i class="faq__icon" aria-hidden="true"></i></button></h3>
+                <div class="faq__a" id="a1"><div><p>Trabajamos con unidades propias con cajas de 53 y 48 pies y con thermo. Además contamos con unidades de familia directa, Torton y camionetas cerradas y abiertas, y colaboramos con TQL y Transportes Olmos.</p></div></div>
+            </div>
+            <div class="faq__item" data-reveal>
+                <h3><button type="button" id="q2" aria-expanded="false" aria-controls="a2"><span>¿Cubren todo México?</span><i class="faq__icon" aria-hidden="true"></i></button></h3>
+                <div class="faq__a" id="a2"><div><p>Sí. Ofrecemos servicio de transporte terrestre nacional y local, con base en Querétaro. Dinos tu origen y destino y armamos la ruta.</p></div></div>
+            </div>
+            <div class="faq__item" data-reveal>
+                <h3><button type="button" id="q3" aria-expanded="false" aria-controls="a3"><span>¿Manejan carga refrigerada?</span><i class="faq__icon" aria-hidden="true"></i></button></h3>
+                <div class="faq__a" id="a3"><div><p>Sí, contamos con unidades con thermo para mercancía que necesita viajar protegida de origen a destino.</p></div></div>
+            </div>
+            <div class="faq__item" data-reveal>
+                <h3><button type="button" id="q4" aria-expanded="false" aria-controls="a4"><span>¿Qué necesito para solicitar una cotización?</span><i class="faq__icon" aria-hidden="true"></i></button></h3>
+                <div class="faq__a" id="a4"><div><p>Solo necesitamos el origen y destino, el tipo de mercancía, el peso o volumen aproximado y la fecha en que requieres el servicio. Puedes enviarlo por WhatsApp, por correo o con el formulario de esta página.</p></div></div>
+            </div>
+            <div class="faq__item" data-reveal>
+                <h3><button type="button" id="q5" aria-expanded="false" aria-controls="a5"><span>¿Con qué empresas han trabajado?</span><i class="faq__icon" aria-hidden="true"></i></button></h3>
+                <div class="faq__a" id="a5"><div><p>Hemos prestado servicio a empresas como Bio Pappel, ALI (Acción Logística Integral), Sabritas y Galletas Dondé, entre otras.</p></div></div>
+            </div>
+            <div class="faq__item" data-reveal>
+                <h3><button type="button" id="q6" aria-expanded="false" aria-controls="a6"><span>¿Cuánta experiencia tiene Transportes Silva Express?</span><i class="faq__icon" aria-hidden="true"></i></button></h3>
+                <div class="faq__a" id="a6"><div><p>Somos una línea de transportes de carga pesada con más de 50 años de experiencia en el área.</p></div></div>
+            </div>
+            <div class="faq__item" data-reveal>
+                <h3><button type="button" id="q7" aria-expanded="false" aria-controls="a7"><span>¿Dónde se encuentra su patio de operaciones?</span><i class="faq__icon" aria-hidden="true"></i></button></h3>
+                <div class="faq__a" id="a7"><div><p>Nuestro patio está sobre la carretera Querétaro-Celaya, en Santa María Magdalena, C.P. 76930, Querétaro.</p></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ CONTACTO + FORMULARIO → WHATSAPP ═══════════════ -->
+<section class="contact" id="contacto" aria-labelledby="contact-title">
+    <div class="wrap contact__grid">
+        <div class="contact__info">
+            <p class="eyebrow" data-reveal>Contacto</p>
+            <h2 class="h2" id="contact-title" data-split>Hablemos de tu carga</h2>
+            <p class="lead" data-reveal style="--d:.2s">Escríbenos por WhatsApp, por correo o llena el formulario. Te respondemos con una cotización a tu medida.</p>
+
+            <ul class="contact__list" data-reveal style="--d:.3s">
+                <li>
+                    <span class="contact__ico"><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i></span>
+                    <div>
+                        <b>WhatsApp y teléfono</b>
+                        <a href="https://wa.me/524423633383" target="_blank" rel="noopener">442 363 3383</a>
+                        <a href="https://wa.me/525664330983" target="_blank" rel="noopener">566 433 0983</a>
+                        <a href="https://wa.me/523222363474" target="_blank" rel="noopener">322 236 3474</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="contact__ico"><i class="ph-bold ph-envelope-simple" aria-hidden="true"></i></span>
+                    <div>
+                        <b>Correo</b>
+                        <a href="mailto:silvaexpres@outlook.es">silvaexpres@outlook.es</a>
+                        <a href="mailto:silvaexpress369@gmail.com">silvaexpress369@gmail.com</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="contact__ico"><i class="ph-bold ph-map-pin" aria-hidden="true"></i></span>
+                    <div>
+                        <b>Patio de operaciones</b>
+                        <address>Carretera Querétaro-Celaya, Santa María Magdalena, C.P. 76930, Querétaro</address>
+                        <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&query=Santa+Mar%C3%ADa+Magdalena+Quer%C3%A9taro+76930" target="_blank" rel="noopener">Ver en Google Maps</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact__card" data-reveal="right">
+            <h3 class="contact__card-title">Cotiza en un minuto</h3>
+            <p class="contact__card-sub">Llena lo que sepas. Al enviar, abrimos WhatsApp con tu solicitud lista.</p>
+
+            <form id="quote-form" class="form" novalidate>
+                <div class="field">
+                    <label for="f-nombre">Nombre completo <span class="req" aria-hidden="true">*</span></label>
+                    <input id="f-nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="e-nombre">
+                    <p class="field__err" id="e-nombre" role="alert"></p>
+                </div>
+
+                <div class="field-row">
+                    <div class="field">
+                        <label for="f-empresa">Empresa</label>
+                        <input id="f-empresa" name="empresa" type="text" autocomplete="organization">
+                    </div>
+                    <div class="field">
+                        <label for="f-tel">Teléfono o WhatsApp <span class="req" aria-hidden="true">*</span></label>
+                        <input id="f-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="e-tel">
+                        <p class="field__err" id="e-tel" role="alert"></p>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="f-unidad">Tipo de unidad <span class="req" aria-hidden="true">*</span></label>
+                    <select id="f-unidad" name="unidad" required aria-describedby="e-unidad">
+                        <option value="" selected disabled>Selecciona una opción</option>
+                        <option>Caja seca de 53 pies</option>
+                        <option>Caja seca de 48 pies</option>
+                        <option>Thermo (carga refrigerada)</option>
+                        <option>Torton</option>
+                        <option>Camioneta cerrada</option>
+                        <option>Camioneta abierta</option>
+                        <option>No estoy seguro, necesito asesoría</option>
+                    </select>
+                    <p class="field__err" id="e-unidad" role="alert"></p>
+                </div>
+
+                <div class="field-row">
+                    <div class="field">
+                        <label for="f-origen">Origen</label>
+                        <input id="f-origen" name="origen" type="text" placeholder="Ciudad y estado">
+                    </div>
+                    <div class="field">
+                        <label for="f-destino">Destino</label>
+                        <input id="f-destino" name="destino" type="text" placeholder="Ciudad y estado">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="f-detalles">Detalles de la carga</label>
+                    <textarea id="f-detalles" name="detalles" rows="3" placeholder="Tipo de mercancía, peso o volumen aproximado y fecha"></textarea>
+                </div>
+
+                <button class="btn btn--primary btn--lg btn--block" type="submit" id="form-submit" data-magnetic>
+                    <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+                    <span class="btn__label">Listo, quiero mi cotización</span>
+                </button>
+                <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+    <div class="wrap footer__top">
+        <div class="footer__brand">
+            <a class="brand brand--light" href="#inicio" aria-label="Ir al inicio">
+                <svg class="brand__mark" viewBox="-292 -292 584 584" aria-hidden="true"><use href="#tse-clover"/></svg>
+                <span class="brand__name"><small>Transportes</small>Silva Express</span>
+            </a>
+            <p>Transporte terrestre de carga pesada, nacional y local. Más de 50 años cuidando cada carga.</p>
+        </div>
+        <nav class="footer__col" aria-label="Secciones">
+            <h2>Secciones</h2>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Unidades y servicios</a>
+            <a href="#compromisos">Compromisos</a>
+            <a href="#cobertura">Cobertura</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#faq">Preguntas frecuentes</a>
+        </nav>
+        <div class="footer__col">
+            <h2>Contacto</h2>
+            <a href="https://wa.me/524423633383" target="_blank" rel="noopener">442 363 3383</a>
+            <a href="https://wa.me/525664330983" target="_blank" rel="noopener">566 433 0983</a>
+            <a href="https://wa.me/523222363474" target="_blank" rel="noopener">322 236 3474</a>
+            <a href="mailto:silvaexpres@outlook.es">silvaexpres@outlook.es</a>
+            <a href="mailto:silvaexpress369@gmail.com">silvaexpress369@gmail.com</a>
+        </div>
+        <div class="footer__col">
+            <h2>Patio</h2>
+            <p>Carretera Querétaro-Celaya, Santa María Magdalena, C.P. 76930, Querétaro, México.</p>
+        </div>
+    </div>
+    <div class="footer__mark" aria-hidden="true"><span>Silva Express</span></div>
+    <div class="wrap footer__bottom">
+        <p>&copy; <span id="year">2026</span> Transportes Silva Express. Todos los derechos reservados.</p>
+        <a href="#inicio" class="footer__up">Volver arriba <i class="ph-bold ph-arrow-up" aria-hidden="true"></i></a>
+    </div>
+</footer>
+
+<!-- ═══════════════ BOTÓN FLOTANTE WHATSAPP ═══════════════ -->
+<a class="wa-float" id="wa-float" href="https://wa.me/524423633383" data-wa="Hola, quiero cotizar el traslado de mi carga con Transportes Silva Express." target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">
+    <span class="wa-float__tip">¿Cotizamos tu carga?</span>
+    <span class="wa-float__btn">
+        <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+    </span>
+</a>
+
+<noscript><style>.loader{display:none!important}</style></noscript>
+<!-- Librerías de animación (degradan con elegancia si no cargan) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
