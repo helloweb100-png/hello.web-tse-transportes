@@ -20,7 +20,7 @@
 
     // Número principal de WhatsApp (formato internacional, sin "+"). Cámbialo aquí y se
     // actualizan todos los botones con data-wa y el formulario.
-    const WA_NUMBER = '524423633383';
+    const WA_NUMBER = '523222363474';
 
     const root = document.documentElement;
     const $ = (s, c = document) => c.querySelector(s);
